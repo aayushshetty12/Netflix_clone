@@ -1,0 +1,28 @@
+.section {
+  color: #fff;
+}
+.section .title {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.scroll {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+  overflow-x: scroll;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.tile {
+  margin: 18px 10px;
+  cursor: pointer;
+  transition: transform 450ms;
+}
+.tile:hover {
+  transform: scale(1.2);
+}
+.tile img {
+  height: 15rem;
+  width: 11rem;
+}

@@ -1,0 +1,30 @@
+.banner img {
+  width: 100%;
+  height: 450px;
+}
+.banner_content {
+  position: absolute;
+  color: #fff;
+  top: 5rem;
+  width: 40%;
+  padding-left: 1.5rem;
+  font-weight: 550;
+}
+.banner_title {
+  line-height: 2rem;
+}
+.banner_descr {
+  line-height: 1.5rem;
+  font-size: large;
+}
+.banner button {
+  background-color: #fff;
+  color: #000;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.banner_fade {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
