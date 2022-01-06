@@ -1,11 +1,12 @@
 .banner img {
   width: 100%;
   height: 450px;
+  margin-top: 3.5rem;
 }
 .banner_content {
   position: absolute;
   color: #fff;
-  top: 5rem;
+  top: 7rem;
   width: 40%;
   padding-left: 1.5rem;
   font-weight: 550;
@@ -22,6 +23,15 @@
   color: #000;
   margin-top: 1rem;
   cursor: pointer;
+  font-weight: 1000;
+  border: none;
+  padding: 0.5rem 3rem;
+  transition: 0.5s;
+}
+
+.banner button:hover {
+  background-color: red;
+  color: #fff;
 }
 .banner_fade {
   width: 100%;

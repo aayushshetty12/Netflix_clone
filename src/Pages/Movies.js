@@ -1,11 +1,23 @@
-import React from 'react'
-import Banner from '../Components/Banner'
-import Body from '../Components/Body'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import MovieBanner from '../Components/Banner/MovieBanner'
+import Body from '../Components/Body/Body.js'
+import * as actionCreators from '../Redux/Movies/movie-actions.js'
+
 function Movies() {
+    const dispatch= useDispatch()
+    const {fetchBanner,fetchData}=bindActionCreators(actionCreators,dispatch)
+
+     useEffect(()=>{
+        fetchBanner() 
+        fetchData()      
+     },[])
+     
     return (
         <div>
-            <Banner movies/>
-            <Body movies/>
+            <MovieBanner/>
+            <Body movies/>           
         </div>
     )
 }

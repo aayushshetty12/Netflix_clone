@@ -1,0 +1,13 @@
+.tile {
+  margin: 20px 10px;
+  cursor: pointer;
+  transition: transform 450ms;
+  height: 15rem;
+}
+.tile:hover {
+  transform: scale(1.15);
+}
+.tile img {
+  height: 100%;
+  width: 11rem;
+}

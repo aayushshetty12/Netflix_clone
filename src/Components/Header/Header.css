@@ -5,10 +5,11 @@
   display: flex;
   align-items: center;
   z-index: 1;
+  background-color: black;
 }
 
 .navigation img {
-  width: 120px;
+  width: 100px;
 }
 
 .navigation {
@@ -19,35 +20,36 @@
 }
 
 .link {
-  color: rgb(219, 213, 213);
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
-  font-size: 1.2rem;
-  height: 1.8rem;
+  font-size: 1.1rem;
+  height: 1.7rem;
 }
 
-.search {
+.searchbar {
   width: 75%;
   text-align: right;
   padding-right: 2.5rem;
 }
 
-.search input,
+.searchbar input,
 button {
   font-size: 1rem;
   background-color: black;
   color: #fff;
-  padding: 10px;
-  border: none;
+  padding: 8px;
 }
 
-.search input {
+.searchbar input {
   border-radius: 10px 0 0 10px;
   width: 25%;
   outline: 0;
+  border-right: none;
 }
 
-.search button {
+.searchbar button {
   border-radius: 0 10px 10px 0;
   cursor: pointer;
+  border-left: none;
 }

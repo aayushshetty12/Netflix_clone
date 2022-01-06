@@ -1,0 +1,24 @@
+.search {
+  position: absolute;
+  margin: 4.5rem 2.5rem 0;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 1.5rem;
+}
+
+.results img {
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
