@@ -10,7 +10,7 @@ function ShowBanner() {
     //console.log(banner)
     return (
         (<div className='banner' >
-            <img src={`${image_url}w1280${banner.backdrop_path}`} alt="dddd" />
+            <img src={`${image_url}w1280${banner.backdrop_path}`} alt={banner.name} />
             <div className="banner_content">
                 <div className="banner_title">
                     <h1>{(banner.name)}</h1>

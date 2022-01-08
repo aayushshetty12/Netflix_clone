@@ -11,7 +11,7 @@ import * as actionCreators from '../../Redux/Search/search-actions'
 
 export default function Header() {
 
-    const [search,setSearch]=useState()
+    const [query,setQuery]=useState()
     const dispatch=useDispatch()
     const {searchData}=bindActionCreators(actionCreators, dispatch)
 
@@ -23,8 +23,8 @@ export default function Header() {
                 <Link className='link' to="/shows">TV Shows</Link>
             </div>
             <div className="searchbar">
-                <input type="text" placeholder='Movies, TV shows...' onChange={e=>setSearch(e.target.value)}/>
-                <Link to='/search'><button onClick={()=>searchData(search)}><FontAwesomeIcon icon={faSearch} /></button></Link>
+                <input type="text" placeholder='Movies, TV shows...' onChange={e=>setQuery(e.target.value)}/>
+                <Link to='/search'><button onClick={()=>searchData(query)}><FontAwesomeIcon icon={faSearch} /></button></Link>
             </div>
                 
         </div>

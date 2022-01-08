@@ -12,7 +12,10 @@ function MovieBody({item}) {
     
     return (
         <div className='section'>
-            <h2 className='title'>{title}</h2>
+            <div className="head">
+                <h2 className='title'>{title}</h2>
+                {/* <button>View All</button> */}
+            </div>
             <div className="scroll">
                 {dataMovie.map(item=>
                     <Tile

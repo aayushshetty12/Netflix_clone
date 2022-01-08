@@ -1,10 +1,13 @@
 .section {
   color: #fff;
 }
-.section .title {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-  margin-bottom: 0;
+.head {
+  margin: 0 1.5rem;
+  /* margin-left: 1.5rem;
+  margin-bottom: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .scroll {
   display: flex;

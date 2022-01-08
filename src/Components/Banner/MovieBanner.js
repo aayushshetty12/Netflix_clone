@@ -10,7 +10,7 @@ function MovieBanner() {
    
     return (   
         <div className='banner' >
-             <img src={`${image_url}w1280${banner.backdrop_path}`} alt="wwww" />
+             <img src={`${image_url}w1280${banner.backdrop_path}`} alt={banner.title} />
              <div className="banner_content">
                 <div className="banner_title">
                     <h1>{banner.title}</h1>

@@ -17,7 +17,7 @@ function TVDetails() {
     },[])
 
     return (
-        <Details tv/>
+        <Details/>
     )
 }
 

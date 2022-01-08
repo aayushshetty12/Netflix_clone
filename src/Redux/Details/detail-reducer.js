@@ -3,7 +3,7 @@ const INITIAL_STATE={
     credit:[]
 }
 
-const details=(state=INITIAL_STATE,{type,payload})=>{
+const detailsReducer=(state=INITIAL_STATE,{type,payload})=>{
     switch(type){
         case 'SET_ABOUT':
             return {...state, about: payload}
@@ -16,4 +16,4 @@ const details=(state=INITIAL_STATE,{type,payload})=>{
     }
 }
 
-export default details
+export default detailsReducer

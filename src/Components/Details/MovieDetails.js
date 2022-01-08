@@ -17,7 +17,7 @@ function MovieDetails() {
     },[])
 
     return (
-        <Details movie/>
+        <Details/>
     )
 }
 

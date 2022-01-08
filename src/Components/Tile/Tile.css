@@ -1,11 +1,20 @@
+.tile_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 10px 0;
+}
+.tile_container p {
+  margin-top: 1.5rem;
+}
 .tile {
-  margin: 20px 10px;
   cursor: pointer;
   transition: transform 450ms;
   height: 15rem;
+  color: #fff;
 }
 .tile:hover {
-  transform: scale(1.15);
+  transform: scale(1.2);
 }
 .tile img {
   height: 100%;
