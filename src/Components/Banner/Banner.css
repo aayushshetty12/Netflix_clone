@@ -2,6 +2,7 @@
   width: 100%;
   height: 450px;
   margin-top: 3.5rem;
+  margin-bottom: 1rem;
 }
 .banner_content {
   position: absolute;
@@ -18,25 +19,38 @@
   line-height: 1.5rem;
   font-size: large;
 }
-.banner button {
+.banner_btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.banner_btns button {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   color: #000;
-  margin-top: 1rem;
+  margin-top: 2rem;
   cursor: pointer;
   font-weight: 1000;
   border: none;
-  padding: 0.5rem 3rem;
+  /* padding: 0.5rem 3rem; */
+  height: 2.5rem;
+  width: 10rem;
   transition: 0.5s;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.banner button:hover {
+.banner_btns button:hover {
   background-color: red;
   color: #fff;
 }
 .banner_fade {
+  position: absolute;
   width: 100%;
-  height: 500px;
-  background-color: black;
+  height: 5rem;
+  background-image: linear-gradient(180deg, transparent, rgb(0, 0, 0));
+  top:27rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -48,5 +62,16 @@
   }
   .banenr_title {
     font-size: 1rem;
+  }
+  .banner_btns{
+    align-items: center;
+    flex-direction: column;
+}
+  .banner_btns button{
+    margin-top: 1rem;
+  }
+  .banner_fade{
+    top:30rem;
+    height: 2rem;
   }
 }

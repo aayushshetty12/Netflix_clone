@@ -1,19 +1,30 @@
-.section {
+.body {
   color: #fff;
+  position: relative;
 }
 .head {
   margin: 0 1.5rem;
-  /* margin-left: 1.5rem;
-  margin-bottom: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.head h2 {
+  margin: 0;
+}
+.head button {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+}
 .scroll {
   display: flex;
   align-items: flex-start;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   overflow-x: scroll;
+  padding: 1.5rem 0 0 ;
+  height: 20rem;
 }
 .scroll::-webkit-scrollbar {
   display: none;

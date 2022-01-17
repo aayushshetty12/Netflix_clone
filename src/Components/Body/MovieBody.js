@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import './Body.css'
-import Tile from '../Tile/Tile.js'
+import Tile from './Tile.js'
 
 function MovieBody({item}) {
 
@@ -11,10 +11,9 @@ function MovieBody({item}) {
     dataMovie=dataMovie.slice(start,end)
     
     return (
-        <div className='section'>
+        <div className='body'>
             <div className="head">
                 <h2 className='title'>{title}</h2>
-                {/* <button>View All</button> */}
             </div>
             <div className="scroll">
                 {dataMovie.map(item=>

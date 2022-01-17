@@ -4,6 +4,7 @@ import TvBody from './TvBody.js'
 import {collection} from '../../Redux/collection.js'
 
 function Body({movies,tv}) {
+
     return (
         <>
         {movies? 
@@ -19,7 +20,6 @@ function Body({movies,tv}) {
              />
              ))
         }
-            
         </>
         
     )

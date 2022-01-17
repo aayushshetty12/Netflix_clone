@@ -1,0 +1,30 @@
+.cast {
+  width: 9rem;
+  margin-right: 1.5rem;
+}
+.cast img {
+  width: 8rem;
+  height: 10rem;
+}
+.cast h3,
+.cast p{
+  margin: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .cast {
+        margin: 0 0.5rem;
+    }
+    .cast img {
+        width: 5rem;
+        height: 7rem;
+        padding-left: 0;
+    }
+    .cast h3 {
+        font-size: 1rem;
+    }
+    .cast p {
+        font-size: 0.8rem;
+    }
+}

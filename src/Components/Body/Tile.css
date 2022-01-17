@@ -1,0 +1,77 @@
+.tile_container {
+  text-align: center;
+  margin: 0 0.6rem ;
+}
+.tile_container:nth-child(1) {
+  margin-left: 1.2rem;
+}
+.tile_container p {
+  display: inline;
+}
+.tile_outer {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.tile_outer:hover {
+  transform: scale(1.2);
+}
+
+.tile_inner {
+  cursor: pointer;
+  transition: transform 450ms;
+  height: 15rem;
+  color: #fff;
+}
+.tile_inner img {
+  height: 100%;
+  width: 11rem;
+}
+.play {
+  position: absolute;
+  margin-top: 13.5rem;
+  height: 3.5rem;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+.play_fade {
+  background-image: linear-gradient(180deg, transparent, rgb(15, 15, 15));
+  height: 1.5rem;
+  width: 100%;
+  margin: 0;
+}
+.play_btn {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  /* padding-bottom: 5px; */
+}
+.play h3 {
+  margin-left: 0.5rem;
+}
+.play .svg_icons {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.play .svg_icons:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.tile_outer:hover .play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tile_outer:hover + .tile_name {
+  display: none;
+}
